@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    --letraAzul: #1411be;
+    font-family: 'Oswald', sans-serif;
+    --letraAzul: #3168ff;
     --fundo: #91d8f7b3;
 }
 
@@ -9,8 +10,7 @@ a{
     color: var(--letraAzul);
     text-decoration: none;
     transition: 0.3s;
-    font-size: 24px;
-    
+    font-size: 20px;
 }
 
 a:hover{
@@ -18,7 +18,7 @@ a:hover{
 }
 
 .logo{
-    width: 15%;
+    width: 10%;
     margin-right: 50%;
 }
 
@@ -31,13 +31,17 @@ nav{
     height: 12vh;
 }
 
+.btContato{
+    padding: 10%;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
 main{
     background: rgb(122, 122, 151);
     background-size: cover;
     height: 92vh;
 }
-
-
 
 .nav-list{
     list-style: none;
@@ -45,8 +49,8 @@ main{
 }
 
 .nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
+    letter-spacing: 1.5px;
+    margin-left: 30px;
 }
 
 .mobile-menu{
@@ -67,10 +71,13 @@ main{
         overflow-x: hidden;
     }
 
+    .logo{
+        width: 20%;
+    }
 
     .nav-list{
         position: absolute;
-        top: 8vh;
+        top: 12vh;
         right: 0;
         width: 45vw;
         height: 92vh;
@@ -80,7 +87,6 @@ main{
         justify-content: space-around;   
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        
     }
 
     .nav-list li{
