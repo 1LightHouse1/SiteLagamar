@@ -20,7 +20,42 @@
     background-color: #91d8f7;
 }
 
-.logo-lagamar{
+.secao-apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 
+                0%, rgba(255,254,254,1) 12%, rgba(145,216,247,1) 100%);
+    gap: 100px;
+}
+
+.imagem-superior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 40%;
+    gap: 5%;
+}
+
+#onda-superior{
+    width: 100%;
+    height: 180px;
+}
+
+#logo-lagamar{
+    height: 400px;
+}
+
+#lagamar-paisagem{
     height: 400px;
 }
 
