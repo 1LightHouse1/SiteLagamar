@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+.left{
+    width: 30%;
+    background-color: black;
+}
+
+.right{
+    width: 70%;
+}
