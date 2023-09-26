@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navigation.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img class="logo" src="/resources/images/logo.png" alt="">
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        <div id="nav-bg" class="btn"></div>
+            <div id="toggle-btn" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <ul class="nav-list">
-                <li><a href="/">Início</a></li>
-                <li><a href="/">Sobre</a></li>
-                <li><a class="btContato" href="/">Contato</a></li>
-            </ul>
-        </nav>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a class="link" href="#0">Início</a></li>
+                        <li><a class="link" href="#0">Sobre</a></li>
+                        <li><a class="link" href="#0">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
     <main class="principal">
-            <figure>
-                <img id="logo-lagamar" src="/resources/images/logo.png" alt="">
-            </figure>
-
+        <figure>
+            <img id="logo-lagamar" src="/images/logo.png" alt="">
+        </figure>
     </main>
     <section class="secao-apresentacao">
         <div class="imagem-superior">
             <figure>
-                <img id="onda-superior" src="./resources/images/ondas-superior.png" alt="">
+                <img id="onda-superior" src="/images/ondas-superior.png" alt="">
             </figure>
         </div>
         <div class="apresentacao">
             <figure>
-                <img id="lagamar-paisagem" src="./resources/images/lagamar-paisagem.png" alt="">
+                <img id="lagamar-paisagem" src="/images/lagamar-paisagem.png" alt="">
             </figure>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -85,6 +86,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="mobile-navbar.js"></script>
+    <script src="/scripts/mobile-navbar.js"></script>
 </body>
 </html>

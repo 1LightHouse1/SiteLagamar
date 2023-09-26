@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    --letraAzul: #3168ff;
+    --fundo: #91d8f7;
+    --cornav: #C9EBFB;
+}
+
+.principal{
+    background-image: url("/images/ondas.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 570px;
+    width: 100%;    
+    background-color: #91d8f7;
+}
+
+.secao-apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 
+                0%, rgba(255,254,254,1) 12%, rgba(145,216,247,1) 100%);
+    gap: 100px;
+}
+
+.imagem-superior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 40%;
+    gap: 5%;
+}
+
+#onda-superior{
+    width: 100%;
+    height: 180px;
+}
+
+#logo-lagamar{
+    height: 400px;
+}
+
+#lagamar-paisagem{
+    height: 400px;
+}
+
+a{
+    color: var(--letraAzul);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -85px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/* =======
+IMPORTS
+======= */
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600');
+
+
+/* =========
+VARIABLES
+========= */
+:root {
+  --offset-value: 30;
+  --btn-size: 60;
+  
+  --green: #4ECA78;
+}
+
+/* =====================
+NAVIGATION BACKGROUND
+===================== */
+#nav-bg {
+  transform-origin: center center;
+  transition: transform .3s;
+  transform: translate(var(--translate-x), var(--translate-y)) scale(var(--scale));
+  will-change: transform;
+  pointer-events: none;
+}
+
+
+/* ======
+BUTTON
+====== */
+.btn {
+  position: fixed;
+  height: calc(var(--btn-size)*1px);
+  width: calc(var(--btn-size)*1px);
+  bottom: calc((var(--offset-value))*1px);
+  left: calc(var(--offset-value)*1px);
+  /*left: calc(50% - (var(--btn-size)/2*1px)); if you wish to center it */
+  border-radius: 50%;
+  background: #fafafa;
+  cursor: pointer;
+  margin: 0;
+  padding: 0 15px;
+  border: none;
+  z-index: 100;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#toggle-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+  /*box-shadow: 0 6px 12px rgba(0,0,0,.1);*/
+  transition: transform .3s;
+}
+
+#toggle-btn span {
+  position: relative;
+  width: 100%;
+}
+
+#toggle-btn span {
+  margin-top: -4px;
+}
+#toggle-btn span + span {
+  margin-top: 8px;
+}
+
+#toggle-btn span:before,
+#toggle-btn span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  background: currentColor;
+  opacity: .8;
+  height: 100%;
+  width: 50%;
+  height: 4px;
+  transition: .25s cubic-bezier(.6,0,.3,1);
+  transform-origin: center center;
+}
+
+#toggle-btn span:before {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#toggle-btn span:after {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+#toggle-btn.shown span:nth-of-type(1):before {
+  transform: translate3d(3px, 3.5px, 0) rotate(45deg);
+}
+
+#toggle-btn.shown span:nth-of-type(1):after {
+  transform: translate3d(-3px, 3.5px, 0) rotate(-45deg);
+}
+
+#toggle-btn.shown span:nth-of-type(3):before {
+  transform: translate3d(3px, -3.5px, 0) rotate(-45deg);
+}
+
+#toggle-btn.shown span:nth-of-type(3):after {
+  transform: translate3d(-3px, -3.5px, 0) rotate(45deg);
+}
+
+#toggle-btn.shown span:nth-of-type(2):before,
+#toggle-btn.shown span:nth-of-type(2):after {
+  opacity: 0.0001;
+}
+
+#toggle-btn.shown span:nth-of-type(2):before {
+  transform: translateX(-200%);
+}
+
+#toggle-btn.shown span:nth-of-type(2):after {
+  transform: translateX(200%);
+}
+
+#toggle-btn.shown:before {
+  transform: scale(.6);
+  transition: .2s;
+}
+
+#toggle-btn:before {
+  content: '';
+  transition: .2s .2s;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.1);
+  border-radius: inherit;
+  filter: blur(5px);
+  z-index: -2;
+}
+#toggle-btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #fafafa;
+  z-index: -1;
+}
