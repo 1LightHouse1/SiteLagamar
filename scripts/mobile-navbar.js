@@ -1,29 +1,14 @@
 class MobileNavBar{
-    constructor(mobileMenu, navList, navLinks){
-        this.mobileMenu = document.querySelector(mobileMenu);
+    constructor(navList, navLinks){
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
-
         this.handleClick = this.handleClick.bind(this);
-    }
-
-    animateLinks(){
-        this.navLinks.forEach((link, index) => {
-            link.style.animation
-                ?(link.style.animation = "")
-                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
-        });
     }
 
     handleClick(){
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
-    }
-
-    addClickEvent(){
-        this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
     init(){
@@ -35,7 +20,6 @@ class MobileNavBar{
 }
 
 const mobileNavBar = new MobileNavBar(
-    ".mobile-menu",
     ".nav-list",
     ".nav-list li",
 );
@@ -53,8 +37,6 @@ let scale, offsetX, offsetY;
 const calculateValues = (() => {
   const w = window.innerWidth;
   const h = window.innerHeight;
-  //const cssStyles = getComputedStyle(elem);
-  //const offsetValue = Number(cssStyles.getPropertyValue('--offset-value'));
   const offsetValue = Number(getComputedStyle(elem).getPropertyValue('--offset-value'));
 
   //  Offsets to center the circle
@@ -63,7 +45,7 @@ const calculateValues = (() => {
 
   // Good old pythagoras
   const radius = Math.sqrt((h ** 2)+(w ** 2));
-  scale = radius/(elemW/2)/2 + .1; // Add '.1' to compensate for Safari sub pixel blur issue
+  scale = radius/(elemW/2);
   return scale;
 })
 
