@@ -106,12 +106,12 @@ a {
   position: fixed;
   height: calc(var(--btn-size)*1px);
   width: calc(var(--btn-size)*1px);
-  bottom: calc((var(--offset-value))*1px);
+  bottom: calc(150% - (var(--offset-value))*1px);
   left: calc(95% - (var(--btn-size)/2*1px));
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
-  padding: 0 15px;
+  padding: 0 15px; 
 }
 
 #toggle-btn {
