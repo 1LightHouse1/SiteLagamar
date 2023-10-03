@@ -3,3 +3,4 @@ $("#botao-comecar").click(function() {
       scrollTop: $("secao-apresentacao").offset().top
     }, 2000);
   });
+  
