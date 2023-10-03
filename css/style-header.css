@@ -18,7 +18,7 @@ body{
 
 .header{
   /* Adicionar a nav fixa ao escrolar */
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -57,4 +57,20 @@ body{
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
+}
+
+.btn{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border: none;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: .1rem;
+  transition: .5s ease;
+}
+
+.btn:hover{
+  color: rgba(255, 255, 255);
 }

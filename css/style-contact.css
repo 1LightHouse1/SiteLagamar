@@ -3,7 +3,7 @@
     --text-color: #fff;
     --main-color: #3168ff;
     --second-bg-color: #C9EBFB;
-}  
+}
 
 .contact{
     padding-bottom: 10rem;
@@ -32,10 +32,17 @@
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: rgb(13, 6, 51);
     background: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
+    border: none;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus{
+    outline: 1px solid rgb(253, 253, 253);
+    border: none;
 }
 
 .contact form .input-box input{
