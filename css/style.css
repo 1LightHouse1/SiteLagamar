@@ -157,7 +157,7 @@ a:hover{
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 90%;
   text-align: left;
   border: none;
   outline: none;
@@ -174,7 +174,10 @@ a:hover{
                 0%,rgba(145,216,247,1) 12%, rgba(255,254,254,1) 100%);
   min-height: 100vh;
   padding: 100px;
-min-height: 100vh;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 
@@ -196,11 +199,11 @@ min-height: 100vh;
 .secao-caminhos .panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
 }
 
 .panel.active {
-  max-height: 500px; /* Defina a altura máxima desejada para a animação */
+  max-height: 200px; /* Defina a altura máxima desejada para a animação */
 }
 
 .panel{
@@ -218,7 +221,7 @@ min-height: 100vh;
   color: white;
   background-color: var(--fundo);
   text-decoration: none;
-  transition: 0.3s;
+  transition: 0.5s;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -244,7 +247,7 @@ min-height: 100vh;
 
 .card-caminho{
   padding: 30px;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
