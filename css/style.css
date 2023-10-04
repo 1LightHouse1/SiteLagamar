@@ -176,10 +176,6 @@ a:hover{
   padding: 100px;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 
 .container-accordion{
   display: flex;
