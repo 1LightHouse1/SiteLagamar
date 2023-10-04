@@ -174,6 +174,7 @@ a:hover{
                 0%,rgba(145,216,247,1) 12%, rgba(255,254,254,1) 100%);
   min-height: 100vh;
   padding: 100px;
+min-height: 100vh;
 }
 
 
@@ -193,7 +194,21 @@ a:hover{
 
 /* Style the accordion panel. Note: hidden by default */
 .secao-caminhos .panel {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel.active {
+  max-height: 500px; /* Defina a altura máxima desejada para a animação */
+}
+
+.panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .accordion{
@@ -239,4 +254,17 @@ a:hover{
   transition: 0.3s;
   font-size: 20px;
   font-weight: 600;
+}
+
+.secao-caminhos{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#img-down{
+  width: 100%;
+  height: 180px;
 }
