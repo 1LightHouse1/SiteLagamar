@@ -3,6 +3,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
+    this.classList.toggle("active-accordion");
     // Fecha todas as seções abertas
     var panels = document.getElementsByClassName("panel");
     for (var j = 0; j < panels.length; j++) {
@@ -11,6 +12,7 @@ for (i = 0; i < acc.length; i++) {
 
     // Abre ou fecha a seção clicada
     var panel = this.nextElementSibling;
+    
     panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
   });
 }
