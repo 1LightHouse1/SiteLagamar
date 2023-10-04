@@ -16,13 +16,13 @@ menuLinks.forEach((link) => {
 });
 
 function smoothScrollTo(endX, endY, duration) {
-  const startX = window.scrollX || window.pageXOffset;
-  const startY = window.scrollY || window.pageYOffset;
+  const startX = window.scrollX;
+  const startY = window.scrollY;
   const distanceX = endX - startX;
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
 
-  duration = typeof duration !== "undefined" ? duration : 400;
+  duration = typeof duration !== "undefined" ? duration : 1300;
 
   const easeInOutQuart = (time, from, distance, duration) => {
     if ((time /= duration / 2) < 1)
