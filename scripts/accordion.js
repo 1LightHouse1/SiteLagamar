@@ -15,7 +15,6 @@ for (i = 0; i < acc.length; i++) {
 
     // Abre ou fecha a seção clicada
     var panel = this.nextElementSibling;
-    
     panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
   });
 }
