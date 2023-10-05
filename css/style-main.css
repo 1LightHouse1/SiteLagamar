@@ -22,6 +22,16 @@
     gap: 100px;
 }
 
+.texto-apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.texto-apresentacao p{
+    font-size: 22px;
+}
+
 .imagem-superior{
     display: flex;
     justify-content: center;
