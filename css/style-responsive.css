@@ -1,5 +1,4 @@
 /* BREAKPOINTS */
-
 @media (max-width: 1200px){
     html {
         font-size: 55%;
@@ -33,8 +32,21 @@
 }
 
 @media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #logo-lagamar{
+        height: 200px;
+    }
+
+    #botao-comecar{
+        font-size: 1.5rem;
+    }
+
     #menu-icon{
         display: block;
+        cursor:pointer;
     }
 
     .navbar{
@@ -57,78 +69,48 @@
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
-    }
-
-    .home{
-        flex-direction: column;
-    }
-
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .about{
-        flex-direction: column-reverse;
-    }
-
-    .about img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .services h2{
-        margin-bottom: 3rem;
-    }
-
-    .portfolio h2{
-        margin-bottom: 3rem;
-    }
-
-    .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
     }
 }
 
 @media (max-width: 617px){
-    .portfolio-container{
-        grid-template-columns: 1fr;
+    body{
+        overflow-x: hidden;
+    }
+
+    #logo-lagamar{
+        height: 160px;
+    }
+
+    #botao-comecar{
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 450px){
-    html{
-        font-size: 50%;
+    body{
+        overflow-x: hidden;
     }
 
-    .contact form .input-box input{
-        width: 100%;
+    #logo-lagamar{
+        height: 120px;
+    }
+
+    #botao-comecar{
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 365px){
-    .home-img{
-        width: 90vw;
+    body{
+        overflow-x: hidden;
     }
 
-    .about-img{
-        width: 90vw;
+    #logo-lagamar{
+        height: 120px;
     }
 
-    .footer{
-        flex-direction: column-reverse;
-    }
-
-    .footer p{
-        text-align: center;
-        margin-top: 2rem;
+    #botao-comecar{
+        font-size: 1.5rem;
     }
 }
