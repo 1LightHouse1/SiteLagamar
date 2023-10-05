@@ -1,21 +1,45 @@
 .secao-agradecimentos{
-    display: flex;
-    justify-content: center;
-    padding: 0 0 5rem 0;
+    background-color: var(--bg2-color);
 }
 
 .text-agradecimentos{
-    display: block;
+    display: flex;
+    width: 100%;
+}
+
+.agradecimentos-left{
     width: 50%;
 }
 
-.text-agradecimentos h1{
-    font-size: 3rem;
-    margin: 5rem 0 2rem;
-    text-align: left;
+.text{
+    margin: 4rem;
 }
 
-.text-agradecimentos p{
-    font-size: 1.5rem;
+.text-info{
+    margin-top: 9rem;
+}
+
+.text-info p{
+    padding: 2rem;
+}
+
+.text-agradecimentos h2{
+    font-size: 2rem;
+    text-align: right;
+    margin: 0 0 4rem 0;
+}
+
+.agradecimentos-right{
     text-align: left;
+    width: 50%;
+}
+
+.agradecimentos-right p{
+    font-size: 1.5rem;
+}
+
+.text-agradecimentos ul li{
+    font-size: 1.5rem;
+    text-align: right;
+    list-style: none;
 }
