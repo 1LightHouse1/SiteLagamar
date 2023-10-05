@@ -1,0 +1,21 @@
+.secao-agradecimentos{
+    display: flex;
+    justify-content: center;
+    padding: 0 0 5rem 0;
+}
+
+.text-agradecimentos{
+    display: block;
+    width: 50%;
+}
+
+.text-agradecimentos h1{
+    font-size: 3rem;
+    margin: 5rem 0 2rem;
+    text-align: left;
+}
+
+.text-agradecimentos p{
+    font-size: 1.5rem;
+    text-align: left;
+}
