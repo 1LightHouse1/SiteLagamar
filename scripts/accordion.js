@@ -5,7 +5,6 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     
     this.classList.toggle("active-accordion");
-    desselecionarAccordion();
     // Fecha todas as seções abertas
     var panels = document.getElementsByClassName("panel");
     for (var j = 0; j < panels.length; j++) {
@@ -19,13 +18,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-function desselecionarAccordion(){
-  for (var index = 0; index < acc.length; index++) {
-    if (acc[i].classList.value.match("active-accordion")) {
-      acc[i].classList.toggle("active-accordion");
-    }
-  }
-}
 
 var buttons = document.querySelectorAll(".accordion");
 
