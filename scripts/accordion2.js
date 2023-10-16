@@ -3,19 +3,24 @@ let secaoBio = document.querySelector('.secao-biodiversidade');
 let secaoSocio = document.querySelector('.secao-sociodiversidade');
 
 botao.forEach((element)=>{
-
-
-    // if (element.classList.contains('active')) element.classList.toggle('active');
-
     element.addEventListener('click',()=>{
-        element.classList.toggle('active');
+        var botoes = document.getElementsByClassName('btn-accordion');
+        if (!element.classList.contains('active')) {
+            for (let index = 0; index < botoes.length; index++) {
+                if (botoes[index].classList.contains('active')) {
+                    botoes[index].classList.toggle('active');
+                }
+            }
+            element.classList.toggle('active');
+        } else element.classList.toggle('active');
+        
+        
         switch (element.id) {
             case "sociodiversidade":
                 // Tentando fazer com que uma feche a outra
-                // if (secaoBio.style.height != '0px') {
-                //     secaoBio.style.height = 0+'px';
-                    
-                // }
+                if (secaoBio.style.height != '0px') {
+                    secaoBio.style.height = 0+'px';
+                }
                 if(element.classList.contains('active')){
                     secaoSocio.style.height = secaoBio.scrollHeight+'px';
                 }else{
@@ -23,9 +28,9 @@ botao.forEach((element)=>{
                 }
                 break;
             case "biodiversidade":
-                // if (secaoSocio.style.height != '0px') {
-                //     secaoSocio.style.height = 0+'px';
-                // }
+                if (secaoSocio.style.height != '0px') {
+                    secaoSocio.style.height = 0+'px';
+                }
 
                 if(element.classList.contains('active')){
                     secaoBio.style.height = secaoBio.scrollHeight+'px';
@@ -39,4 +44,3 @@ botao.forEach((element)=>{
 
     })
 })
-
