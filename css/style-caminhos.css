@@ -1,3 +1,10 @@
+
+*{
+  --letraAzul: #3168ff;
+  --fundo: #91d8f7;
+  --cornav: #C9EBFB;
+}
+
 /* Sessao da escolhja */
 .secao-escolha{
   display: flex;
@@ -82,4 +89,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--fundo); 
 }

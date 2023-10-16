@@ -1,3 +1,10 @@
+
+*{
+    --letraAzul: #3168ff;
+    --fundo: #91d8f7;
+    --cornav: #C9EBFB;
+  }
+
 .secao-agradecimentos{
     background-color: var(--bg2-color);
 }

@@ -1,3 +1,10 @@
+
+*{
+    --letraAzul: #3168ff;
+    --fundo: #91d8f7;
+    --cornav: #C9EBFB;
+  }
+
 .contact{
     padding-bottom: 10rem;
 }
