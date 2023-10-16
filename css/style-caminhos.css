@@ -1,50 +1,30 @@
-/* Style the buttons that are used to open and close the accordion panel */
+/* Sessao da escolhja */
 .secao-escolha{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 100px;
   background: linear-gradient(180deg, rgba(145,216,247,1) 
                 0%,rgba(145,216,247,1) 12%, rgba(255,254,254,1) 100%);
-  padding: 100px;
+  padding: 50px;
 }
 
-
+/*Secao onde as imagens e botoes vão ficar */
 .container-accordion{
   display: flex;
   align-items: center;
   justify-items: center;
-  flex-direction: row;
-  width: 80%;
-  gap: 20px
+  width: 75%;
+  gap: 150px
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active-accordion, .accordion:hover {
+/* adicionando uma cor ao passar o mouse em cima do botão */
+.active-accordion, .btn-accordion-socio:hover, .btn-accordion-bio:hover {
   background-color: var(--letraAzul);
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.secao-caminhos .panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease-out;
-}
-
-.panel.active {
-  max-height: 200px; /* Defina a altura máxima desejada para a animação */
-}
-
-.panel{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.accordion{
+/*Estilizando os botoes*/
+.btn-accordion {
   font-size: 14px;
   font-weight: 600;
   border-radius: 3px;
@@ -56,42 +36,50 @@
   cursor: pointer;
 }
 
+/*Dimensionando as imagens*/
 #img{
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.3s;
-}
-
-#img-top{
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
 }
 
+/*Div onde estao as respectivas imagens e botoes*/
 .card-caminho{
-  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 50px;
   transition: 0.3s;
   font-size: 20px;
   font-weight: 600;
 }
 
-.secao-caminhos{
+/*Secao da biodiversiade*/
+.secao-biodiversidade{
+  height: 0;
+  transition: all 1s;
+}
+
+.conteudo-biodiversidade{
+  width: 100%;
+  height: 200px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-#img-down{
+/*Secao da sociodiversiade*/
+.secao-sociodiversidade{
+  height: 0;
+  transition: all 1s;
+}
+
+.conteudo-sociodiversidade{
   width: 100%;
-  height: 180px;
+  height: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
