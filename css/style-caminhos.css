@@ -1,8 +1,10 @@
+@import url(https://db.onlinewebfonts.com/c/4acf49f638295608865a0a0c949fdb7d?family=Mistress+Benedict+Brush);
 
 *{
   --letraAzul: #3168ff;
   --fundo: #91d8f7;
   --cornav: #C9EBFB;
+  --letraTitulos: rgb(0, 8, 114);
 }
 
 /* Sessao da escolhja */
@@ -69,8 +71,13 @@
 
 .conteudo-biodiversidade{
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
+}
 
+.titulo-pessoas{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +99,10 @@
   background-color: var(--fundo); 
 }
 
-.titulo-biodiversidade{
-  
-
+.titulo-pessoas{
+  padding: 20px;
+  font-family: "Mistress Benedict Brush";
+  font-weight: lighter;
+  font-size: 150px;
+  color:var(--letraTitulos);
 }
