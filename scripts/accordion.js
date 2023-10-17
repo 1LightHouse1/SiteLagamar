@@ -1,50 +1,51 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+let botao = document.querySelectorAll('.btn-accordion');
+let secaoBio = document.querySelector('.secao-biodiversidade');
+let secaoSocio = document.querySelector('.secao-sociodiversidade');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    
-    this.classList.toggle("active-accordion");
-    // Fecha todas as seções abertas
-    var panels = document.getElementsByClassName("panel");
-    for (var j = 0; j < panels.length; j++) {
-      panels[j].style.maxHeight = null;
+botao.forEach((element)=>{
+    element.addEventListener('click',()=>{
+        var botoes = document.getElementsByClassName('btn-accordion');
+        if (!element.classList.contains('active')) {
+            for (let index = 0; index < botoes.length; index++) {
+                if (botoes[index].classList.contains('active')) {
+                    botoes[index].classList.toggle('active');
+                }
+            }
+            element.classList.toggle('active');
+        } else element.classList.toggle('active');
+        
+        abreAcordeao(element);
 
+    })
+})
+
+function abreAcordeao(elemento){
+    console.log('DEU BOA VIADO');
+    switch (elemento.id) {
+        case "sociodiversidade":
+            // Tentando fazer com que uma feche a outra
+            if (secaoBio.style.height != '0px') {
+                secaoBio.style.height = 0+'px';
+            }
+            if(elemento.classList.contains('active')){
+                secaoSocio.style.height = secaoBio.scrollHeight+'px';
+            }else{
+                secaoSocio.style.height = 0+'px';
+            }
+            break;
+        case "biodiversidade":
+            if (secaoSocio.style.height != '0px') {
+                secaoSocio.style.height = 0+'px';
+            }
+
+            if(elemento.classList.contains('active')){
+                secaoBio.style.height = secaoBio.scrollHeight+'px';
+            }else{
+                secaoBio.style.height = 0+'px';
+            }
+        break;
+        default:
+            break;
     }
 
-    // Abre ou fecha a seção clicada
-    var panel = this.nextElementSibling;
-    panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
-  });
 }
-
-
-var buttons = document.querySelectorAll(".accordion");
-
-buttons.forEach(function(button) {
-  button.addEventListener("click", function() {
-    var target = this.getAttribute("data-target");
-    var targetSection = document.getElementById(target);
-
-    if (targetSection.classList.contains("active")) {
-      // Rola suavemente para cima quando a seção é fechada
-      targetSection.style.maxHeight = "0";
-      setTimeout(function() {
-        targetSection.classList.remove("active");
-      }, 500); // Tempo de espera para a conclusão da animação
-    } else {
-      var sections = document.querySelectorAll(".secao-caminhos .panel");
-      sections.forEach(function(section) {
-        section.style.maxHeight = "0";
-        section.classList.remove("active");
-      });
-
-      // Rola suavemente para baixo quando a seção é aberta
-      targetSection.style.maxHeight = targetSection.scrollHeight + "px";
-      targetSection.classList.add("active");
-
-      var offsetTop = targetSection.offsetTop;
-      window.scrollTo({ top: offsetTop, behavior: "smooth" });
-    }
-  });
-});
