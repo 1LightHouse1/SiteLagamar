@@ -67,6 +67,7 @@
 .secao-biodiversidade{
   height: 0;
   transition: all 1s;
+
 }
 
 .conteudo-biodiversidade{
@@ -74,13 +75,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--fundo); 
 }
 
-.titulo-pessoas{
+.titulo-animais{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.titulo-animais h2{
+  font-family: "Mistress Benedict Brush";
+  font-weight: lighter;
+  font-size: 150px;
+  color:var(--letraTitulos);
+}
+
+.card-1{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.imagem{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.imagem img{
+  width: 100%;
+}
+
+.texto{
+  width: 50%;
+}
+
+.texto p{
+  font-size: 20px;
+  color: var(--letraTitulos);
 }
 
 /*Secao da sociodiversiade*/
