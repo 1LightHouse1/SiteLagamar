@@ -22,12 +22,11 @@
   display: flex;
   align-items: center;
   justify-items: center;
-  width: 75%;
-  gap: 150px
+  width: 80%;
 }
 
 /* adicionando uma cor ao passar o mouse em cima do botão */
-.active-accordion, .btn-accordion-socio:hover, .btn-accordion-bio:hover {
+.active-accordion, .btn-accordion:hover, .btn-accordion:hover {
   background-color: var(--letraAzul);
 }
 
@@ -45,10 +44,6 @@
 }
 
 /*Dimensionando as imagens*/
-#img{
-  width: 100%;
-  height: 100%;
-}
 
 /*Div onde estao as respectivas imagens e botoes*/
 .card-caminho{
@@ -56,12 +51,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  transition: 0.3s;
+  gap: 10px;
   font-size: 20px;
   font-weight: 600;
 }
 
+.card-caminho img{
+  width: 80%;
+}
 
 /*Secao da biodiversiade*/
 .secao-biodiversidade{
