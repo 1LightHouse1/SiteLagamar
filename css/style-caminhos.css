@@ -14,8 +14,7 @@
   align-items: center;
   flex-direction: column;
   gap: 100px;
-  background: linear-gradient(180deg, rgba(145,216,247,1) 
-                0%,rgba(145,216,247,1) 12%, rgba(255,254,254,1) 100%);
+  background: rgba(145,216,247,1);
 }
 
 /*Secao onde as imagens e botoes vão ficar */
@@ -68,7 +67,7 @@
 .secao-biodiversidade{
   display: none;
   padding: 10px;
-  border: 1px solid #ccc;
+  transition: all 1s;
 }
 
 .conteudo-biodiversidade{
@@ -127,7 +126,6 @@
 .secao-sociodiversidade{
   display: none;
   padding: 10px;
-  border: 1px solid #ccc;
 }
 
 .conteudo-sociodiversidade{
