@@ -12,10 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 100px;
   background: linear-gradient(180deg, rgba(145,216,247,1) 
                 0%,rgba(145,216,247,1) 12%, rgba(255,254,254,1) 100%);
-  padding: 50px;
 }
 
 /*Secao onde as imagens e botoes vão ficar */
@@ -63,11 +63,12 @@
   font-weight: 600;
 }
 
+
 /*Secao da biodiversiade*/
 .secao-biodiversidade{
-  height: 0;
-  transition: all 1s;
-
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
 .conteudo-biodiversidade{
@@ -124,8 +125,9 @@
 
 /*Secao da sociodiversiade*/
 .secao-sociodiversidade{
-  height: 0;
-  transition: all 1s;
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 
 .conteudo-sociodiversidade{
