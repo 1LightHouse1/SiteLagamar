@@ -64,8 +64,9 @@
 .secao-biodiversidade{
   display: none;
   padding: 10px;
-  transition: all 1s;
 }
+
+
 
 .conteudo-biodiversidade{
   width: 100%;
@@ -123,6 +124,7 @@
 .secao-sociodiversidade{
   display: none;
   padding: 10px;
+  transition: opacity 0.5s;
 }
 
 .conteudo-sociodiversidade{
