@@ -34,13 +34,10 @@ document.getElementById("sociodiversidade").addEventListener("click", function (
         var section2 = document.getElementById("section2");
         section2.classList.toggle(".active");
         section2.style.display = "block";
-        setTimeout(() =>{
-            section2.style.maxHeight = section2.scrollHeight+"px";
-        }, 100)
-
+        section2.style.maxHeight = section2.scrollHeight+"px";
         section2Visible = true;
         
         
 
-      }
+    }
 });

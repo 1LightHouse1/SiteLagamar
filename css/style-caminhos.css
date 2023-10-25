@@ -62,6 +62,7 @@
 /*Secao da biodiversiade*/
 .secao-biodiversidade{
   display: none;
+  max-height: 0px;
   transition: max-height 2s ease-out;
 }
 
@@ -120,6 +121,7 @@
 /*Secao da sociodiversiade*/
 .secao-sociodiversidade{
   display: none;
+  max-height: 0px;
   transition: max-height 2s ease-out;
 }
 
