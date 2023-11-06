@@ -118,6 +118,18 @@
   color: var(--letraTitulos);
 }
 
+.apresentacao-bivalves{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 44px;
+}
+
+.apresentacao-bivalves p{
+  font-size: 22px;
+  color: var(--letraTitulos);
+}
+
 /*Secao da sociodiversiade*/
 .secao-sociodiversidade{
   display: none;
