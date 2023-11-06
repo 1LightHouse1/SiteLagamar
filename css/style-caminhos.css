@@ -132,6 +132,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--fundo); 
+  flex-direction: column;
 }
 
 .titulo-pessoas{
@@ -140,4 +141,31 @@
   font-weight: lighter;
   font-size: 150px;
   color:var(--letraTitulos);
+}
+
+.card-sociodiversidade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  width: 80%;
+}
+
+.imagem-pescador img{
+  width: 95%;
+  height: 95%;
+}
+
+.imagem-pescador{
+  background-color: white;
+  height: 70vh;
+  width: 70vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.escrita-sociodiversidade{
+  width: 100%;
 }
