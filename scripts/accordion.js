@@ -1,5 +1,3 @@
-
-
 var section1Visible = false;
 var section2Visible = false;
 
@@ -8,9 +6,10 @@ document.getElementById("biodiversidade").addEventListener("click", function () 
         var section1 =document.getElementById("section1");
         section1.classList.toggle(".active");
         section1.style.maxHeight = 0 + "px";
-        setTimeout(() =>{
+         setTimeout(() =>{
             section1.style.display = "none";
-        }, 2000);
+            //DESABILITAR BOTAO POR 2 SEGUNDOS
+         }, 2000);
         section1Visible = false;
 
     } else {
