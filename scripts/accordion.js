@@ -8,11 +8,13 @@ botaoBiodiversidade.addEventListener("click", function () {
     if (section1Visible) {
         var section1 = document.getElementById("section1");
         section1.classList.toggle(".active");
+        botaoBiodiversidade.classList.toggle(".disabled");
         section1.style.maxHeight = 0 + "px";
         botaoBiodiversidade.toggleAttribute("disabled");
          setTimeout(() =>{
             section1.style.display = "none";
             botaoBiodiversidade.toggleAttribute("disabled");
+            botaoBiodiversidade.classList.toggle(".disabled");
          }, 2000);
         section1Visible = false;
 
@@ -37,10 +39,12 @@ botaoSociodiversidade.addEventListener("click", function () {
         var section2 = document.getElementById("section2");
         section2.classList.toggle(".active");
         section2.style.maxHeight = 0+"px";
-        botaoSociodiversidade.toggleAttribute("disable");
+        botaoSociodiversidade.toggleAttribute("disabled");
+        botaoSociodiversidade.classList.toggle(".disabled");
         setTimeout(() =>{
             section2.style.display = "none";
-            botaoSociodiversidade.toggleAttribute("disable");
+            botaoSociodiversidade.toggleAttribute("disabled");
+            botaoSociodiversidade.classList.toggle(".disabled");
         }, 2000);
         section2Visible = false;
     } else {
@@ -66,10 +70,12 @@ function fechaSecao(params, botao) {
  
     params.classList.toggle(".active");
     params.style.maxHeight = 0+"px";
-    botaoBiodiversidade.toggleAttribute("disable");
+    botao.toggleAttribute("disabled");
+    botao.classList.toggle(".disabled")
     setTimeout(() =>{
         params.style.display = "none";
-        botaoBiodiversidade.toggleAttribute("disable");
+        botao.toggleAttribute("disabled");
+        botao.classList.toggle(".disabled")
     }, 2000)
     if (params.classList.contains("secao-biodiversidade")) {
         section1Visible = false;  
@@ -82,9 +88,11 @@ function abreSecao(params, botao) {
     params.classList.toggle(".active");
     params.style.display = "block";
     params.style.maxHeight = params.scrollHeight+"px";
-    botao.toggleAttribute("disable");
+    botao.toggleAttribute("disabled");
+    botao.classList.toggle(".disabled")
     setTimeout(() => {
-        botao.toggleAttribute("disable");
+        botao.toggleAttribute("disabled");
+        botao.classList.toggle(".disabled")
     }, 2000)
     if (params.classList.contains("secao-biodiversidade")) {
         section1Visible = true;  
