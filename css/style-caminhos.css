@@ -76,13 +76,14 @@
   background-color: var(--fundo); 
 }
 
-.titulo-animais{
+.titulos{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 
-.titulo-animais h2{
+.titulos h2{
   font-family: "Mistress Benedict Brush";
   font-weight: lighter;
   font-size: 150px;
@@ -128,6 +129,26 @@
 .apresentacao-bivalves p{
   font-size: 22px;
   color: var(--letraTitulos);
+}
+
+.ambientes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ambientes img{
+  width: 50%;
+}
+
+.ambientes p{
+  width: 75%;
+  font-size: 22px;
+  color: var(--letraTitulos);
+  text-align: center;
 }
 
 /*Secao da sociodiversiade*/
