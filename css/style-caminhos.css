@@ -25,8 +25,13 @@
 }
 
 /* adicionando uma cor ao passar o mouse em cima do botão */
-.active-accordion, .btn-accordion:hover, .btn-accordion:hover {
+.disabled, .btn-accordion:hover {
   background-color: var(--letraAzul);
+}
+
+.disabled{
+  opacity: 0.4;
+
 }
 
 /*Estilizando os botoes*/
@@ -128,10 +133,10 @@
 
 .conteudo-sociodiversidade{
   width: 100%;
+  background-color: var(--fundo); 
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--fundo); 
   flex-direction: column;
 }
 
@@ -143,13 +148,20 @@
   color:var(--letraTitulos);
 }
 
-.card-sociodiversidade{
+.pessoas-corpo{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 30px;
   width: 80%;
+}
+
+.card-pessoas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .imagem-pescador img{
