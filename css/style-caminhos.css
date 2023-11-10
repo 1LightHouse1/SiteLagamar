@@ -148,28 +148,37 @@
   color:var(--letraTitulos);
 }
 
-.pessoas-corpo{
+.pessoas-corpo, .apetrechos-corpo{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   gap: 30px;
   width: 80%;
 }
-
-.card-pessoas{
+.card-pessoas, .card-apetrechos{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
-.imagem-pescador img{
-  width: 95%;
-  height: 95%;
+.card-apetrechos{
+  gap: 30px;
+  padding-bottom: 10%;
 }
 
-.imagem-pescador{
+.imagem-pescador img, .imagem-apetrechos img{
+  width: 98%;
+  height: 98%;
+}
+
+.imagem-apetrechos .apetrecho1{
+  width: 99%;
+}
+
+.imagem-pescador, .imagem-apetrechos {
   background-color: white;
   height: 70vh;
   width: 70vw;
@@ -178,6 +187,35 @@
   display: flex;
 }
 
-.escrita-sociodiversidade{
+.imagem-ferramenta{
+  position: absolute;
+  height: 60vh;
+  width: 60vh;
+  right: 10%;
+}
+
+.escrita-pessoas{
   width: 100%;
+}
+
+.escrita-apetrechos{
+  width: 90%;
+}
+
+.escrita-apetrechos p, .escrita-pessoas p{
+  font-size: 20px;
+}
+
+.corpo2 p{
+  text-align: right;
+}
+
+.apetrechos-corpo .corpo2{
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 60%;
+}
+
+.foto-ferramenta{
+  position: absolute;
 }
