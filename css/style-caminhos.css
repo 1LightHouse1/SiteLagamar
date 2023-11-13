@@ -120,7 +120,7 @@
 }
 
 .apresentacao-bivalves{
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: center;
   padding-top: 44px;
@@ -129,6 +129,7 @@
 .apresentacao-bivalves p{
   font-size: 22px;
   color: var(--letraTitulos);
+  text-align: center;
 }
 
 .ambientes{
@@ -146,6 +147,12 @@
 
 .ambientes p{
   width: 75%;
+  font-size: 22px;
+  color: var(--letraTitulos);
+  text-align: center;
+}
+
+.usos p {
   font-size: 22px;
   color: var(--letraTitulos);
   text-align: center;
