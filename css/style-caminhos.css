@@ -148,7 +148,7 @@
   color:var(--letraTitulos);
 }
 
-.pessoas-corpo, .apetrechos-corpo{
+.pessoas-corpo, .apetrechos-corpo, .pesca-corpo{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -156,7 +156,7 @@
   gap: 30px;
   width: 80%;
 }
-.card-pessoas, .card-apetrechos{
+.card-pessoas, .card-apetrechos, .card-pesca{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +187,9 @@
   display: flex;
 }
 
-.imagem-ferramenta{
+
+
+.imagem-ferramenta, #pescador-pesca-absolute{
   position: absolute;
   height: 60vh;
   width: 60vh;
@@ -202,20 +204,34 @@
   width: 90%;
 }
 
-.escrita-apetrechos p, .escrita-pessoas p{
+.pesca-corpo{
+  align-items: flex-start;
+}
+
+.escrita-apetrechos p, .escrita-pessoas p, .escrita-pesca p{
   font-size: 20px;
 }
 
-.corpo2 p{
+
+.corpo2-apetrechos p{
   text-align: right;
 }
 
-.apetrechos-corpo .corpo2{
-  align-items: flex-start;
+.apetrechos-corpo .corpo2-apetrechos{
+  align-items: center;
   justify-content: flex-start;
   width: 60%;
 }
 
 .foto-ferramenta{
   position: absolute;
+}
+
+#pescador-pesca{
+  height: 90vh;   
+}
+
+#pescador-pesca-absolute{
+  height: 100vh;
+  width: 90vh;
 }
