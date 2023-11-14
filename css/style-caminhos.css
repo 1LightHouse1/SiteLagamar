@@ -1,10 +1,13 @@
 @import url(https://db.onlinewebfonts.com/c/4acf49f638295608865a0a0c949fdb7d?family=Mistress+Benedict+Brush);
 
 *{
+  padding: 0;
+  margin: 0;
   --letraAzul: #3168ff;
   --fundo: #91d8f7;
   --cornav: #C9EBFB;
   --letraTitulos: rgb(0, 8, 114);
+  --corantropoceno: #dbd8c3;
 }
 
 /* Sessao da escolhja */
@@ -102,7 +105,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 .imagem{
@@ -218,6 +222,7 @@
 }
 
 .imagem-card-2 img{
+  width: 60%;
   border: 5px solid white;
 }
 
@@ -444,4 +449,174 @@ figcaption{
 
 #imagem-processamento1{
   height: 100vh;
+}
+
+/*Sessao antropoceno*/
+
+.secao-antropoceno{
+  width: 100%;
+}
+
+.conteudo-antropoceno{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--corantropoceno);
+}
+
+.titulos-antropoceno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.titulos-antropoceno h2{
+  font-family: "Mistress Benedict Brush";
+  font-weight: lighter;
+  font-size: 150px;
+  color:black;
+}
+
+.texto-antropoceno{
+  width: 50%;
+}
+
+.texto-antropoceno p{
+  font-size: 22px;
+  color: black;
+}
+
+.neosambaquis{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.neosambaquis img{
+  width: 50%;
+}
+
+.neosambaquis p{
+  width: 60%;
+  font-size: 22px;
+  color: black;
+  text-align: center;
+}
+
+.card-mudança-climatica{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-mudança-climatica p {
+  width: 60%;
+  font-size: 22px;
+  color: black;
+  text-align: center;
+}
+
+.card-mudança-climatica img{
+  width: 50%;
+}
+
+.lixo-no-mar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: linear-gradient(180deg, var(--corantropoceno)  
+  0%, rgb(199, 199, 181) 12%, rgb(0, 0, 0) 100%);
+}
+
+.lixo-no-mar p{
+  width: 80%;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  padding: 5rem;
+}
+
+#entrada-antropoceno p{
+  color: white;
+}
+
+#entrada-antropoceno h2{
+  color: white;
+}
+
+#entrada-antropoceno{
+  color: white;
+}
+
+.antropoceno{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  gap: 50px;
+  padding-bottom: 10rem;
+}
+
+.antropoceno p{
+  width: 70%;
+  font-size: 22px;
+  text-align: center;
+}
+
+.conteudo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagem-antropoceno img{
+  width: 40%;
+}
+
+.cards-antropoceno{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ongs{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ongs img{
+  width: 10%;
+}
+
+.aviso{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aviso img{
+  width: 10%;
+}
+
+.aviso h2{
+  font-size: 3vw;
+  color: white;
 }
