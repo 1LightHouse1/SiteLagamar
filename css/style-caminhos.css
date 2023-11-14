@@ -295,6 +295,16 @@ figcaption{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(180deg,rgba(145,216,247,1)   
+  0%, rgb(209, 209, 183) 90%, #dbd8c3 100%);
+}
+
+.conteudo-sociodiversidade img{
+  border: 0.5rem solid white;
+}
+
+.conteudo-sociodiversidade p{
+  color: var(--letraTitulos);
 }
 
 .titulo-sociodiversidade{
@@ -339,9 +349,8 @@ figcaption{
 }
 
 .imagem-pescador, .imagem-apetrechos, .imagem-processamento, .imagem-cultivo {
-  background-color: white;
+  
   width: 50vw;
-  height: 60vh;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -353,7 +362,7 @@ figcaption{
   position: absolute;
   height: 60vh;
   width: 60vh;
-  right: 14%;
+
 }
 
 .escrita-pessoas{
@@ -538,6 +547,10 @@ figcaption{
 
 #corpo4-cultivo{
   gap: 0;
+}
+
+#corpo4-cultivo h3{
+  color: var(--letraTitulos);
 }
 
 .legenda-referencia{
