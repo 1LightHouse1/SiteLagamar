@@ -13,7 +13,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(145,216,247,1);
+  background: linear-gradient(180deg, rgb(145,216,247) 
+                0%, rgba(255,254,254,1) 100%);
 }
 
 /*Secao onde as imagens e botoes vão ficar */
@@ -77,17 +78,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
   background-color: var(--fundo); 
+  padding: 20px;
 }
 
-.titulo-animais{
+.titulos{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 40px;
 }
 
-.titulo-animais h2{
+.titulos h2{
   font-family: "Mistress Benedict Brush";
   font-weight: lighter;
   font-size: 150px;
@@ -95,11 +97,11 @@
 }
 
 .card-1{
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  padding: 10rem;
 }
 
 .imagem{
@@ -111,7 +113,7 @@
 }
 
 .imagem img{
-  width: 100%;
+  width: 70%;
 }
 
 .texto{
@@ -119,8 +121,159 @@
 }
 
 .texto p{
+  font-size: 22px;
+  color: var(--letraTitulos);
+}
+
+.apresentacao-bivalves{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.apresentacao-bivalves p{
+  font-size: 22px;
+  color: var(--letraTitulos);
+  text-align: center;
+}
+
+.ambientes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ambientes img{
+  width: 30%;
+}
+
+.ambientes p{
+  width: 75%;
+  font-size: 22px;
+  color: var(--letraTitulos);
+  text-align: center;
+}
+
+.usos{
+  width: 100%;
+}
+
+.usos p {
+  font-size: 22px;
+  color: var(--letraTitulos);
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.card{
+  background-color: var(--fundo);
+  border: none;
+}
+
+.card-title{
+  display: flex;
+  justify-content: center;
+  color: var(--letraTitulo);
+}
+
+#pesca-1{
+  width: 50%;
+}
+
+#barcos{
+  width: 70%;
+}
+
+.card-2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.apresentacao-consevacao{
+  width: 100%;
+}
+
+.imagem-card-2{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.imagem-card-2 img{
+  border: 5px solid white;
+}
+
+.texto-conservacao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.texto-conservacao p{
+  width: 75%;
+  font-size: 24px;
+  color: var(--letraTitulos);
+  text-align: center;
+}
+
+.texto-conservacao h2{
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--letraTitulos);
+}
+
+.listas{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.listas ul li{
   font-size: 20px;
   color: var(--letraTitulos);
+}
+
+.lista-1{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-2{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption{
+  color: var(--letraTitulos);
+}
+
+.texto-conservacao img{
+  width: 50%;
+  border: 5px solid white;
 }
 
 /*Secao da sociodiversiade*/
@@ -129,7 +282,6 @@
   max-height: 0px;
   transition: max-height 2s ease-in-out;
 }
-
 
 .conteudo-sociodiversidade{
   width: 100%;
