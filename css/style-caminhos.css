@@ -82,8 +82,7 @@
   align-items: center;
   flex-direction: column;
   background: linear-gradient(180deg,rgba(145,216,247,1)   
-  0%, rgba(255,254,254,1) 99.9%, rgb(255, 255, 255) 100%);
-  padding: 20px;
+  0%, rgb(209, 209, 183) 90%, #dbd8c3 100%);
 }
 
 .titulos{
@@ -551,7 +550,10 @@ figcaption{
 /*Sessao antropoceno*/
 
 .secao-antropoceno{
-  width: 100%;
+
+  display: none;
+  max-height: 0px;
+  transition: max-height 2s ease-in-out;
 }
 
 .conteudo-antropoceno{
@@ -567,7 +569,7 @@ figcaption{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  padding: 25px;
 }
 
 .titulos-antropoceno h2{
