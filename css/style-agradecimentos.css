@@ -3,50 +3,80 @@
     --letraAzul: #3168ff;
     --fundo: #91d8f7;
     --cornav: #C9EBFB;
+    --letraTitulos: rgb(0, 8, 114);
   }
 
 .secao-agradecimentos{
-    background-color: var(--fundo);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 
+                0%, rgba(255,254,254,1) 12%, rgba(145,216,247,1) 100%);
+    padding-top: 150px;
+    height: 1200px;
 }
 
 .text-agradecimentos{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .agradecimentos-left{
-    width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 4rem;
+    gap: 3rem;
+    color: var(--letraTitulos);
 }
 
-.text-info{
-    margin-top: 9rem;
+.text h2{
+    font-size: 2.5rem;
 }
 
 .text-info p{
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.text-agradecimentos h2{
-    font-size: 2rem;
-    text-align: right;
-    margin: 0 0 4rem 0;
-}
 
 .agradecimentos-right{
-    text-align: left;
-    width: 50%;
+    width: 80%;
 }
 
 .agradecimentos-right p{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--letraAzul);
 }
 
 .text-agradecimentos ul li{
     font-size: 1.5rem;
-    text-align: right;
     list-style: none;
+}
+
+.realizacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.realizacao h2{
+    font-size: 2.5rem;
+    color: var(--letraTitulos);
+}
+
+.bloco-1, .bloco-2, .bloco-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }

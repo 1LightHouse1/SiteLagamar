@@ -13,7 +13,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(145,216,247,1);
+  background: linear-gradient(180deg, rgb(145,216,247) 
+                0%, rgba(255,254,254,1) 100%);
 }
 
 /*Secao onde as imagens e botoes vão ficar */
