@@ -148,7 +148,15 @@
   color:var(--letraTitulos);
 }
 
-.pessoas-corpo, .apetrechos-corpo, .pesca-corpo{
+
+.card-pessoas, .card-apetrechos, .card-pesca, .card-processamento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pessoas-corpo, .apetrechos-corpo, .pesca-corpo, .processamento-corpo{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -156,20 +164,14 @@
   gap: 30px;
   width: 80%;
 }
-.card-pessoas, .card-apetrechos, .card-pesca{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-}
 
 .card-apetrechos{
   gap: 30px;
   padding-bottom: 10%;
 }
 
-.imagem-pescador img, .imagem-apetrechos img{
+.imagem-pescador img, .imagem-apetrechos img, .imagem-processamento img{
   width: 98%;
   height: 98%;
 }
@@ -178,7 +180,7 @@
   width: 99%;
 }
 
-.imagem-pescador, .imagem-apetrechos {
+.imagem-pescador, .imagem-apetrechos, .imagem-processamento {
   background-color: white;
   height: 70vh;
   width: 70vw;
@@ -189,11 +191,11 @@
 
 
 
-.imagem-ferramenta, #pescador-pesca-absolute{
+.imagem-ferramenta{
   position: absolute;
   height: 60vh;
   width: 60vh;
-  right: 10%;
+  right: 14%;
 }
 
 .escrita-pessoas{
@@ -208,7 +210,8 @@
   align-items: flex-start;
 }
 
-.escrita-apetrechos p, .escrita-pessoas p, .escrita-pesca p{
+.escrita-apetrechos p, .escrita-pessoas p, .escrita-pesca p,
+.escrita-processamento p{
   font-size: 20px;
 }
 
@@ -228,10 +231,64 @@
 }
 
 #pescador-pesca{
-  height: 90vh;   
+  height: 90vh;
+  width: 30vw; 
 }
 
-#pescador-pesca-absolute{
+#pescador-pesca2{
+  width: 30vw;
+  height: 80vh;
+}
+
+
+.pesca-coluna1, .pesca-coluna2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.pesca-coluna1{
+  gap: 40px;
+}
+
+.pesca-coluna2{
+  align-items: flex-start;
+  gap: 220PX;
+}
+
+#escrita-pesca1{
+  text-align: end;
+}
+
+#pescador-consumo{
+  height: 90vh;
+  width: 100%;
+}
+
+.card-pesca{
+  gap: 50px;
+}
+
+#corpo2-pesca{
+  align-items: center;
+  justify-content: center;
+}
+
+.processamento-coluna{
+  display: flex;
+  align-items:flex-start;
+  width: 50%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.imagem-processamento{
+  width: 40vw;
+  height: 60vh;
+}
+
+#imagem-processamento1{
   height: 100vh;
-  width: 90vh;
 }
