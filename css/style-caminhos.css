@@ -294,7 +294,7 @@ figcaption{
 }
 
 .titulo-sociodiversidade{
-  padding: 20px;
+  padding: 5%;
   font-family: "Mistress Benedict Brush";
   font-weight: lighter;
   font-size: 150px;
@@ -302,14 +302,14 @@ figcaption{
 }
 
 
-.card-pessoas, .card-apetrechos, .card-pesca, .card-processamento{
+.card-pessoas, .card-apetrechos, .card-pesca, .card-processamento, .card-cultivo{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.pessoas-corpo, .apetrechos-corpo, .pesca-corpo, .processamento-corpo{
+.pessoas-corpo, .apetrechos-corpo, .pesca-corpo, .processamento-corpo, .cultivo-corpo{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -324,7 +324,8 @@ figcaption{
   padding-bottom: 10%;
 }
 
-.imagem-pescador img, .imagem-apetrechos img, .imagem-processamento img{
+.imagem-pescador img, .imagem-apetrechos img, .imagem-processamento img,
+.imagem-cultivo img{
   width: 98%;
   height: 98%;
 }
@@ -333,10 +334,10 @@ figcaption{
   width: 99%;
 }
 
-.imagem-pescador, .imagem-apetrechos, .imagem-processamento {
+.imagem-pescador, .imagem-apetrechos, .imagem-processamento, .imagem-cultivo {
   background-color: white;
-  height: 70vh;
-  width: 70vw;
+  height: 50vh;
+  width: 50vw;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -384,7 +385,7 @@ figcaption{
 }
 
 #pescador-pesca{
-  height: 90vh;
+  height: 70vh;
   width: 30vw; 
 }
 
@@ -416,13 +417,15 @@ figcaption{
 }
 
 #pescador-consumo{
-  height: 90vh;
-  width: 100%;
+  width: 70% ;
+  height: 80vh;
 }
 
 .card-pesca{
   gap: 50px;
 }
+
+
 
 #corpo2-pesca{
   align-items: center;
@@ -431,17 +434,43 @@ figcaption{
 
 .processamento-coluna{
   display: flex;
-  align-items:flex-start;
+  align-items:center;
   width: 50%;
   flex-direction: column;
   gap: 50px;
 }
 
 .imagem-processamento{
-  width: 40vw;
-  height: 60vh;
+  width: 30vw;
+  height: 50vh;
 }
 
 #imagem-processamento1{
-  height: 100vh;
+  width: 30vw;
+  height: 90vh;
 }
+
+#escrita-processamento-avulso{
+  margin: 5%;
+}
+
+#imagem-cultivo1{
+  width: 70vh;
+  height: 70vh;
+}
+
+#imagem-cultivo2{
+  width: 30vw;
+}
+
+.coluna-cultivo{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+#coluna2-cultivo{
+  flex-direction: column;
+  align-items:end;
+}
+
