@@ -476,7 +476,6 @@ figcaption{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 10%;
 }
 
 #corpo1-cultivo{
@@ -487,7 +486,7 @@ figcaption{
 #coluna2-cultivo{
   flex-direction: column;
   align-items:center;
-  gap: 180px;
+  gap: 80px;
 }
 
 #corpo2-cultivo{
