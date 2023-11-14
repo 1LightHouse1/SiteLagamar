@@ -299,7 +299,7 @@ figcaption{
 }
 
 .titulo-sociodiversidade{
-  padding: 20px;
+  padding: 5%;
   font-family: "Mistress Benedict Brush";
   font-weight: lighter;
   font-size: 150px;
@@ -307,14 +307,14 @@ figcaption{
 }
 
 
-.card-pessoas, .card-apetrechos, .card-pesca, .card-processamento{
+.card-pessoas, .card-apetrechos, .card-pesca, .card-processamento, .card-cultivo{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.pessoas-corpo, .apetrechos-corpo, .pesca-corpo, .processamento-corpo{
+.pessoas-corpo, .apetrechos-corpo, .pesca-corpo, .processamento-corpo, .cultivo-corpo{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -329,19 +329,20 @@ figcaption{
   padding-bottom: 10%;
 }
 
-.imagem-pescador img, .imagem-apetrechos img, .imagem-processamento img{
-  width: 98%;
-  height: 98%;
+.imagem-pescador img, .imagem-apetrechos img, .imagem-processamento img,
+.imagem-cultivo img{
+  width: 95%;
+  height: 95%;
 }
 
 .imagem-apetrechos .apetrecho1{
   width: 99%;
 }
 
-.imagem-pescador, .imagem-apetrechos, .imagem-processamento {
+.imagem-pescador, .imagem-apetrechos, .imagem-processamento, .imagem-cultivo {
   background-color: white;
-  height: 70vh;
-  width: 70vw;
+  width: 50vw;
+  height: 60vh;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -369,10 +370,13 @@ figcaption{
 }
 
 .escrita-apetrechos p, .escrita-pessoas p, .escrita-pesca p,
-.escrita-processamento p{
+.escrita-processamento p, .escrita-cultivo p{
   font-size: 20px;
 }
 
+.escrita-cultivo p{
+  text-align: right;
+}
 
 .corpo2-apetrechos p{
   text-align: right;
@@ -389,7 +393,7 @@ figcaption{
 }
 
 #pescador-pesca{
-  height: 90vh;
+  height: 70vh;
   width: 30vw; 
 }
 
@@ -421,13 +425,15 @@ figcaption{
 }
 
 #pescador-consumo{
-  height: 90vh;
-  width: 100%;
+  width: 70% ;
+  height: 80vh;
 }
 
 .card-pesca{
   gap: 50px;
 }
+
+
 
 #corpo2-pesca{
   align-items: center;
@@ -436,19 +442,110 @@ figcaption{
 
 .processamento-coluna{
   display: flex;
-  align-items:flex-start;
+  align-items:center;
   width: 50%;
   flex-direction: column;
   gap: 50px;
 }
 
 .imagem-processamento{
-  width: 40vw;
-  height: 60vh;
+  width: 30vw;
+  /* height: 50vh; */
 }
 
 #imagem-processamento1{
-  height: 100vh;
+  width: 30vw;
+  height: 90vh;
+}
+
+#escrita-processamento-avulso{
+  margin: 5%;
+}
+
+.card-cultivo{
+  gap: 50px;
+}
+
+#imagem-cultivo1{
+  width: 90vh;
+  height: 90vh;
+}
+
+#imagem-cultivo2{
+  width: 35vw;
+}
+
+.coluna-cultivo{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#corpo1-cultivo{
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#coluna2-cultivo{
+  flex-direction: column;
+  align-items:center;
+  gap: 80px;
+}
+
+#corpo2-cultivo{
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#imagem-cultivo3{
+  width: 40vw;
+  height: 64vh;
+}
+
+#imagem-cultivo4{
+  width: 30vw;
+  height: 80vh;
+}
+
+#coluna2-cultivo2{
+  justify-content: flex-end;
+}
+
+#coluna2-cultivo3, #coluna1-cultivo3{
+  gap: 50px;
+  padding: 0;
+}
+
+#imagem-cultivo6 {
+  width: 90vh;
+}
+
+#imagem-cultivo5{
+  width: 40vw;
+  height: 90vh;
+}
+
+#corpo4-cultivo{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imagem-cultivo{
+  flex-direction: column;
+}
+
+#corpo4-cultivo{
+  gap: 0;
+}
+
+.legenda-referencia{
+  width: 80%;
+  text-align: center;
+  color: black;
+  font-size: 9px;
 }
 
 /*Sessao antropoceno*/
