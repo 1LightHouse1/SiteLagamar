@@ -326,8 +326,8 @@ figcaption{
 
 .imagem-pescador img, .imagem-apetrechos img, .imagem-processamento img,
 .imagem-cultivo img{
-  width: 98%;
-  height: 98%;
+  width: 95%;
+  height: 95%;
 }
 
 .imagem-apetrechos .apetrecho1{
@@ -336,8 +336,8 @@ figcaption{
 
 .imagem-pescador, .imagem-apetrechos, .imagem-processamento, .imagem-cultivo {
   background-color: white;
-  height: 50vh;
   width: 50vw;
+  height: 60vh;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -365,10 +365,13 @@ figcaption{
 }
 
 .escrita-apetrechos p, .escrita-pessoas p, .escrita-pesca p,
-.escrita-processamento p{
+.escrita-processamento p, .escrita-cultivo p{
   font-size: 20px;
 }
 
+.escrita-cultivo p{
+  text-align: right;
+}
 
 .corpo2-apetrechos p{
   text-align: right;
@@ -442,7 +445,7 @@ figcaption{
 
 .imagem-processamento{
   width: 30vw;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 #imagem-processamento1{
@@ -454,23 +457,89 @@ figcaption{
   margin: 5%;
 }
 
+.card-cultivo{
+  gap: 50px;
+}
+
 #imagem-cultivo1{
-  width: 70vh;
-  height: 70vh;
+  width: 90vh;
+  height: 90vh;
 }
 
 #imagem-cultivo2{
-  width: 30vw;
+  width: 35vw;
 }
 
 .coluna-cultivo{
   display: flex;
   width: 50%;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+#corpo1-cultivo{
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #coluna2-cultivo{
   flex-direction: column;
-  align-items:end;
+  align-items:center;
+  gap: 180px;
 }
 
+#corpo2-cultivo{
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#imagem-cultivo3{
+  width: 40vw;
+  height: 64vh;
+}
+
+#imagem-cultivo4{
+  width: 30vw;
+  height: 80vh;
+}
+
+#coluna2-cultivo2{
+  justify-content: flex-end;
+}
+
+#coluna2-cultivo3, #coluna1-cultivo3{
+  gap: 50px;
+  padding: 0;
+}
+
+#imagem-cultivo6 {
+  width: 90vh;
+}
+
+#imagem-cultivo5{
+  width: 40vw;
+  height: 90vh;
+}
+
+#corpo4-cultivo{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imagem-cultivo{
+  flex-direction: column;
+}
+
+#corpo4-cultivo{
+  gap: 0;
+}
+
+.legenda-referencia{
+  width: 80%;
+  text-align: center;
+  color: black;
+  font-size: 9px;
+}
