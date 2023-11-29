@@ -87,18 +87,42 @@
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 480px){
     body{
         overflow-x: hidden;
     }
 
-    #logo-lagamar{
-        height: 120px;
+
+    .secao-apresentacao {
+        height: auto; /* Adjusted for responsiveness */
     }
 
-    #botao-comecar{
-        font-size: 1.5rem;
+    .texto-apresentacao p {
+        font-size: 14px; /* Adjusted for responsiveness */
     }
+
+    .apresentacao {
+        width: 100%; /* Adjusted for responsiveness */
+    }
+
+    #botao-comecar {
+        padding: 10px 20px; /* Adjusted for responsiveness */
+        font-size: 16px; /* Adjusted for responsiveness */
+        border-radius: 25px; /* Adjusted for responsiveness */
+    }
+
+    #logo-lagamar {
+        height: 150px; /* Adjusted for responsiveness */
+    }
+
+    #lagamar-paisagem {
+        height: 250px; /* Adjusted for responsiveness */
+    }
+
+    #onda-superior{
+        width: 100vw;
+    }
+    
 }
 
 @media (max-width: 365px){
