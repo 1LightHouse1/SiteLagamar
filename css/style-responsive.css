@@ -1,3 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding-left: 0;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 1200px){
     html {
@@ -76,7 +85,9 @@
     }
 
     .texto-apresentacao p {
-        font-size: 14px; /* Adjusted for responsiveness */
+        font-size: 16px; /* Adjusted for responsiveness */
+        text-align: center;
+        padding-top: 0.5rem;
     }
 
     .apresentacao {
@@ -124,7 +135,37 @@
         border: none;
         cursor: pointer;
     }
+
+    .secao-agradecimentos{
+        padding-top: 70px;
+        height: 390vh;
+    }
+
+    .agradecimentos-left{
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .text{
+        align-items: center;
+        margin: 1rem;
+        gap: 1rem;
+        color: var(--letraTitulos);
+    }
+    
+    .text h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .text ul li{
+        text-align: center;
+    }
+
+    
 }
+
 
 @media (max-width: 365px){
     body{
