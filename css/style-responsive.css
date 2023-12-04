@@ -70,13 +70,9 @@
         overflow-x: hidden;
     }
 
-    .principal{
-
-    }
-
-
     .secao-apresentacao {
         height: auto; /* Adjusted for responsiveness */
+        
     }
 
     .texto-apresentacao p {
@@ -85,7 +81,10 @@
 
     .apresentacao {
         width: 100%; /* Adjusted for responsiveness */
-        min-height:0rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #botao-comecar {
@@ -106,6 +105,25 @@
         width: 100vw;
     }
     
+    /*Parte das escolhas */
+    .container-accordion{
+        gap: 50px;
+    }
+    .card-caminho img{
+        width: 100%;
+    }
+
+    .btn-accordion{
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(60, 197, 255);
+        transition: 0.5s;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 365px){

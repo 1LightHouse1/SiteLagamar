@@ -26,6 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     background: linear-gradient(180deg, rgb(255, 255, 255) 
                 0%, rgba(255,254,254,1) 12%, rgba(145,216,247,1) 100%);
     gap: 100px;
@@ -57,9 +58,6 @@
     gap: 5%;
 }
 
-.principal-imagem{
-    
-}
 
 #botao-comecar{
   display: inline-block;
