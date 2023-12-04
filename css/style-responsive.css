@@ -6,29 +6,7 @@
 }
 
 @media (max-width: 991px){
-    .header{
-        padding: 2rem 3%;
-    }
-
-    section{
-        padding: 10rem 3% 2rem;
-    }
-
-    .services{
-        padding-bottom: 7rem;
-    }
-
-    .portfolio{
-        padding-bottom: 7rem;
-    }
-
-    .contact{
-        min-height: auto;
-    }
-
-    .footer{
-        padding: 2rem 3%;
-    }
+    
 }
 
 @media (max-width: 768px){
@@ -87,9 +65,13 @@
     }
 }
 
-@media (max-width: 480px){
+@media screen and (max-width: 480px) and (orientation: portrait){
     body{
         overflow-x: hidden;
+    }
+
+    .principal{
+
     }
 
 
@@ -103,6 +85,7 @@
 
     .apresentacao {
         width: 100%; /* Adjusted for responsiveness */
+        min-height:0rem;
     }
 
     #botao-comecar {
