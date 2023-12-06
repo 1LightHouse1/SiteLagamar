@@ -89,7 +89,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .titulos h2{
@@ -132,11 +132,12 @@
 .apresentacao-bivalves{
   width: 100%;
   display: flex;
+  padding-top: 30px;
   justify-content: center;
 }
 
 .apresentacao-bivalves p{
-  font-size: 22px;
+  font-size: 2px;
   color: var(--letraTitulos);
   text-align: center;
 }
@@ -576,6 +577,7 @@ figcaption{
   align-items: center;
   flex-direction: column;
   background-color: var(--corantropoceno);
+
 }
 
 .titulos-antropoceno{
@@ -593,6 +595,9 @@ figcaption{
 }
 
 .texto-antropoceno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
 }
 
@@ -607,7 +612,7 @@ figcaption{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  padding-top: 20px;
 }
 
 .neosambaquis img{
@@ -621,6 +626,8 @@ figcaption{
   text-align: center;
 }
 
+
+
 .card-mudança-climatica{
   width: 100%;
   display: flex;
@@ -628,10 +635,11 @@ figcaption{
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  padding-top: 20px;
 }
 
 .card-mudança-climatica p {
-  width: 60%;
+  width: 50%;
   font-size: 22px;
   color: black;
   text-align: center;
