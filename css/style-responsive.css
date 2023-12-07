@@ -254,7 +254,7 @@ ul{
     }
 
     .titulos-antropoceno h2{
-        font-size: 110px;
+        font-size: 90px;
     }
       
     #mudancas-climaticas h2{
@@ -272,7 +272,7 @@ ul{
     }
 
     .texto-antropoceno{
-        width: 70%;
+        width: 100%;
     }
 
     #antropoceno-card{
@@ -335,7 +335,86 @@ ul{
         font-size: 20px;
         text-align: center;
     }
-    
+
+    /*Seção Sociodiversidade*/
+
+    .titulo-sociodiversidade{
+        font-size: 10rem;
+    }
+
+    .card-pessoas, .card-apetrechos, .processamento-coluna1{
+        width: 100vw;
+    }
+
+    .escrita-pessoas p, #escrita-apetrechos1 p, #escrita-apetrechos2 p, 
+    .escrita-pesca p, #escrita-pesca1, .escrita-processamento p, 
+    .escrita-cultivo p, #escrita-cultivo-responsividade p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #processamento-coluna1{
+        width: 100%;
+    }
+
+    #escrita-cultivo-responsividade{
+        width: 100%;
+        height: 100%;
+    }
+    #escrita-apetrechos1, #escrita-apetrechos2 {
+        width: 100%;
+    }
+
+    #escrita-processamento-avulso{
+        margin: 0;
+        width: 40%;
+    }
+
+    .pessoas-corpo, .apetrechos-corpo,
+    #apetrechos-corpo1, #apetrechos-corpo2, .pesca-corpo,
+    .processamento-corpo, .processamento-coluna, .cultivo-corpo,
+    .coluna-cultivo, #coluna2-cultivo, #corpo2-cultivo, #coluna2-cultivo2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #pessoas-corpo2, #apetrechos-corpo1{
+        flex-wrap: wrap-reverse;
+    }
+
+    .imagem-pescador, .imagem-apetrechos, #pescador-pesca, #pescador-pesca2,
+    .imagem-processamento, #imagem-cultivo1, #imagem-cultivo2, #imagem-cultivo3,
+    #imagem-cultivo4, #imagem-cultivo5, #pescador-consumo, .imagem-cultivo {
+        width: 80vw;
+    }
+
+    .pesca-coluna2, .pesca-coluna1{
+        gap: 10px;
+        align-items: center;
+    }
+
+    .pesca-coluna2{
+        flex-direction: column-reverse;
+    }
+
+    #imagem-processamento1{
+        width: 30vw;
+    }
+
+    #imagem-processamento2{
+        width: 40vw;
+    }
+
+    #imagem-cultivo6{
+        width: 230vw;
+    }
+
+    .legenda-referencia{
+        width: 40%;
+    }
 }
 
 

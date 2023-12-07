@@ -334,10 +334,6 @@ figcaption{
 }
 
 
-.card-apetrechos{
-  gap: 30px;
-  padding-bottom: 10%;
-}
 
 .imagem-pescador img, .imagem-apetrechos img, .imagem-processamento img,
 .imagem-cultivo img{
@@ -355,15 +351,6 @@ figcaption{
   align-items: center;
   justify-content: center;
   display: flex;
-}
-
-
-
-.imagem-ferramenta{
-  position: absolute;
-  height: 60vh;
-  width: 60vh;
-
 }
 
 .escrita-pessoas{
@@ -402,13 +389,11 @@ figcaption{
 }
 
 #pescador-pesca{
-  height: 70vh;
   width: 30vw; 
 }
 
 #pescador-pesca2{
   width: 30vw;
-  height: 80vh;
 }
 
 
@@ -424,8 +409,10 @@ figcaption{
   gap: 40px;
 }
 
+
+
 .pesca-coluna2{
-  align-items: flex-start;
+  align-items: center;
   gap: 220PX;
 }
 
@@ -434,8 +421,7 @@ figcaption{
 }
 
 #pescador-consumo{
-  width: 70% ;
-  height: 80vh;
+  width: 60vw ;
 }
 
 .card-pesca{
@@ -451,20 +437,23 @@ figcaption{
 
 .processamento-coluna{
   display: flex;
-  align-items:center;
+  align-items:flex-start;
   width: 50%;
   flex-direction: column;
   gap: 50px;
 }
 
+#coluna1-processamento2{
+  align-items: flex-end;
+}
+
 .imagem-processamento{
-  width: 30vw;
-  /* height: 50vh; */
+  width: 45vw;
+  
 }
 
 #imagem-processamento1{
   width: 30vw;
-  height: 90vh;
 }
 
 #escrita-processamento-avulso{
@@ -476,8 +465,7 @@ figcaption{
 }
 
 #imagem-cultivo1{
-  width: 90vh;
-  height: 90vh;
+  width: 90vw;
 }
 
 #imagem-cultivo2{
@@ -510,12 +498,10 @@ figcaption{
 
 #imagem-cultivo3{
   width: 40vw;
-  height: 64vh;
 }
 
 #imagem-cultivo4{
   width: 30vw;
-  height: 80vh;
 }
 
 #coluna2-cultivo2{
@@ -528,12 +514,11 @@ figcaption{
 }
 
 #imagem-cultivo6 {
-  width: 90vh;
+  width: 80vw;
 }
 
 #imagem-cultivo5{
   width: 40vw;
-  height: 90vh;
 }
 
 #corpo4-cultivo{
@@ -554,6 +539,7 @@ figcaption{
   color: var(--letraTitulos);
 }
 
+
 .legenda-referencia{
   width: 80%;
   text-align: center;
@@ -561,6 +547,14 @@ figcaption{
   font-size: 9px;
 }
 
+ p{
+  font-size: 0px;
+
+}
+#escrita-cultivo-responsividade{
+width: 0;
+height: 0;
+}
 /*Sessao antropoceno*/
 
 .secao-antropoceno{
