@@ -166,6 +166,10 @@ ul{
 
     /*Sessao Biodiversidade*/
 
+    .titulos h2{
+        font-size: 15rem;
+    }
+
     .conteudo-biodiversidade{
         gap: 30px;
     }
@@ -228,7 +232,7 @@ ul{
     }
 
     #conservacao h2{
-        font-size: 130px;
+        font-size: 12rem;
     }
 
     .texto-conservacao h2 {
