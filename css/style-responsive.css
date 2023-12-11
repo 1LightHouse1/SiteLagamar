@@ -74,7 +74,7 @@ ul{
     }
 }
 
-@media screen and (max-width: 480px) and (orientation: portrait){
+@media screen and (max-width: 488px) and (orientation: portrait){
     body{
         overflow-x: hidden;
     }
@@ -139,7 +139,7 @@ ul{
 
     .secao-agradecimentos{
         padding-top: 70px;
-        height: 360vh;
+        height: 240vh;
     }
 
     .agradecimentos-left{
