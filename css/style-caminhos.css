@@ -448,7 +448,7 @@ figcaption{
 }
 
 .imagem-processamento{
-  width: 45vw;
+  width: 35vw;
   
 }
 
@@ -465,7 +465,7 @@ figcaption{
 }
 
 #imagem-cultivo1{
-  width: 90vw;
+  width: 40vw;
 }
 
 #imagem-cultivo2{
@@ -475,7 +475,7 @@ figcaption{
 .coluna-cultivo{
   display: flex;
   width: 50%;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -501,7 +501,7 @@ figcaption{
 }
 
 #imagem-cultivo4{
-  width: 30vw;
+  width: 26vw;
 }
 
 #coluna2-cultivo2{
@@ -514,7 +514,7 @@ figcaption{
 }
 
 #imagem-cultivo6 {
-  width: 80vw;
+  width: 40vw;
 }
 
 #imagem-cultivo5{
