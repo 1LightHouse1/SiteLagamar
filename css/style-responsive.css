@@ -371,7 +371,7 @@ ul{
 
     #escrita-processamento-avulso{
         margin: 0;
-        width: 40%;
+        width: 90%;
     }
 
     .pessoas-corpo, .apetrechos-corpo,
@@ -383,6 +383,7 @@ ul{
         align-items: center;
         justify-content: center;
         gap: 10px;
+        width: 90%;
     }
 
     #pessoas-corpo2, #apetrechos-corpo1{
@@ -413,8 +414,9 @@ ul{
     }
 
     #imagem-cultivo6{
-        width: 230vw;
+        width: 90vw;
     }
+
 
     .legenda-referencia{
         width: 40%;
